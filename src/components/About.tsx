@@ -54,7 +54,7 @@ export const About = () => {
               <img
                 src="/images/about_us.png"
                 alt="Paula's A1 Tree Removal & Stump Grind Team"
-                className="w-full h-[360px] object-cover object-center"
+                className="w-full h-auto object-contain"
               />
             </div>
             {/* Decorative element */}
