@@ -52,7 +52,7 @@ export const About = () => {
           <div className="relative">
             <div className="overflow-hidden rounded-lg">
               <img
-                src="/images/img1.png"
+                src="/images/about_us.png"
                 alt="Paula's A1 Tree Removal & Stump Grind Team"
                 className="w-full h-auto object-cover"
               />

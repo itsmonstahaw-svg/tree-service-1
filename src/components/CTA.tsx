@@ -6,7 +6,7 @@ export const CTA = () => {
       {/* Background Image */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url("/images/hero.png")' }}
+        style={{ backgroundImage: 'url("/images/ready_for_next_step.png")' }}
       >
         <div className="absolute inset-0 bg-black/55"></div>
       </div>

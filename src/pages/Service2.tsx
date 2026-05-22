@@ -25,7 +25,7 @@ const Service2 = () => {
         <section className="relative w-full min-h-[100vh] flex items-center justify-center text-center pt-32 pb-12 overflow-hidden">
           <div
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: 'url("/images/hero.png")' }}
+            style={{ backgroundImage: 'url("/images/stump_grinding.png")' }}
           >
             <div className="absolute inset-0 bg-black/60"></div>
           </div>
