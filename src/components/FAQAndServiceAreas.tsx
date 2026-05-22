@@ -44,7 +44,7 @@ export const FAQAndServiceAreas = () => {
           {/* Image Right */}
           <div className="relative rounded-lg overflow-hidden h-[400px] lg:h-[450px]">
             <img
-              src="/images/img13.png"
+              src="/images/img13.jpg"
               alt="Paula's A1 Tree Removal Services"
               className="object-cover w-full h-full absolute inset-0"
             />

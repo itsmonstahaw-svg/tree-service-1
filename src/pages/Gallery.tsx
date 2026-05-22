@@ -23,9 +23,9 @@ const Gallery = () => {
     "/images/img8.png",
     "/images/img9.png",
     "/images/img10.png",
-    "/images/img11.png",
-    "/images/img12.png",
-    "/images/img13.png",
+    "/images/img11.jpg",
+    "/images/img12.jpg",
+    "/images/img13.jpg",
   ];
 
   return (

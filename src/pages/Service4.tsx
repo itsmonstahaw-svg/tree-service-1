@@ -78,8 +78,8 @@ const Service4 = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <img src="/images/img10.png" alt="Arborist pruning a large canopy tree" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
-              <img src="/images/img11.png" alt="Deadwood removal during tree pruning" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
-              <img src="/images/img12.png" alt="Healthy well-pruned tree on Florida property" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
+              <img src="/images/img11.jpg" alt="Deadwood removal during tree pruning" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
+              <img src="/images/img12.jpg" alt="Healthy well-pruned tree on Florida property" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
             </div>
           </div>
         </section>

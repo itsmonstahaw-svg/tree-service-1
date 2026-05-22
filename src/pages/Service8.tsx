@@ -78,8 +78,8 @@ const Service8 = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <img src="/images/img10.png" alt="Storm cleanup service image 1" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
-              <img src="/images/img11.png" alt="Storm cleanup service image 2" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
-              <img src="/images/img13.png" alt="Storm cleanup service image 3" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
+              <img src="/images/img11.jpg" alt="Storm cleanup service image 2" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
+              <img src="/images/img13.jpg" alt="Storm cleanup service image 3" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
             </div>
           </div>
         </section>
