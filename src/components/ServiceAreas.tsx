@@ -7,13 +7,13 @@ export const ServiceAreas = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Map */}
           <div className="bg-black border border-white/10 rounded-lg shadow-2xl aspect-square md:aspect-[4/3] relative overflow-hidden">
-            <iframe 
-              src="https://maps.google.com/maps?q=4610%20Cashel%20Glen%20Dr,%20Houston,%20TX%2077069&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
+            <iframe
+              src="https://maps.google.com/maps?q=6260%20S%20Falls%20Cir%20Dr%2C%20Lauderhill%2C%20FL%2033319&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="absolute inset-0"
             ></iframe>
@@ -27,14 +27,18 @@ export const ServiceAreas = () => {
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
-                "Houston, TX",
-                "Katy, TX",
-                "Sugar Land, TX",
-                "Pearland, TX",
-                "The Woodlands, TX",
-                "Pasadena, TX"
+                "Lauderhill, FL",
+                "Fort Lauderdale, FL",
+                "Hollywood, FL",
+                "Miramar, FL",
+                "Pembroke Pines, FL",
+                "Plantation, FL",
+                "Sunrise, FL",
+                "Davie, FL",
+                "Tamarac, FL",
+                "Deerfield Beach, FL"
               ].map((area, index) => (
                 <div key={index} className="flex items-center gap-3 bg-black p-4 rounded-lg border border-white/10 shadow-sm text-white">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">

@@ -4,11 +4,11 @@ export const CTA = () => {
   return (
     <section className="relative py-32 md:py-48 flex items-center justify-center text-center overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url("https://vibe.filesafe.space/1778436264577951505/attachments/ca8b6994-e5cc-4984-9c9c-83a4359702ee.png")' }}
+        style={{ backgroundImage: 'url("/images/hero.png")' }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/55"></div>
       </div>
 
       {/* Top Wave */}
@@ -32,11 +32,13 @@ export const CTA = () => {
         <h3 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase text-white tracking-tighter [text-shadow:_0_2px_10px_rgba(0,0,0,0.5)]">
           GET A FREE QUOTE TODAY!
         </h3>
-        
+
         <div className="pt-8">
-          <Button size="lg" className="h-16 px-12 bg-primary hover:bg-primary/90 text-primary-foreground font-black text-xl uppercase tracking-wider rounded-sm shadow-2xl">
-            Get A Free Quote
-          </Button>
+          <a href="/contact">
+            <Button size="lg" className="h-16 px-12 bg-primary hover:bg-primary/90 text-primary-foreground font-black text-xl uppercase tracking-wider rounded-sm shadow-2xl">
+              Get A Free Quote
+            </Button>
+          </a>
         </div>
       </div>
     </section>

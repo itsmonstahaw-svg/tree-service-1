@@ -1,32 +1,20 @@
-import { useEffect } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Star, ArrowRight } from "lucide-react";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Star, ArrowRight, X } from "lucide-react";
 
 export const Reviews = ({ topWaveColor = "black" }: { topWaveColor?: "black" | "white" }) => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://link.msgsndr.com/js/form_embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-    
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <section className="relative pt-32 pb-32 md:pt-48 md:pb-48 bg-card overflow-hidden border-b border-border/40">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url("https://vibe.filesafe.space/1778436264577951505/attachments/71f05754-1b7c-496a-97d5-7de6b8943cf9.png")' }}
+        style={{ backgroundImage: 'url("/images/hero.png")' }}
       >
       </div>
       {/* Dark Overlay */}
-      <div className="absolute inset-0 z-0 bg-black/50"></div>
+      <div className="absolute inset-0 z-0 bg-black/60"></div>
 
       {/* Top Wave */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none z-10 rotate-180">
@@ -58,10 +46,12 @@ export const Reviews = ({ topWaveColor = "black" }: { topWaveColor?: "black" | "
             </div>
           </div>
           <div className="flex-shrink-0 mb-1">
-            <Button variant="outline" className="font-bold uppercase tracking-wider bg-white text-black hover:bg-gray-200 border-0 h-12 px-6 py-2 text-sm flex items-center gap-2 shadow-xl">
-              Contact Us Now
-              <ArrowRight className="w-4 h-4 text-primary" />
-            </Button>
+            <a href="/contact">
+              <Button variant="outline" className="font-bold uppercase tracking-wider bg-white text-black hover:bg-gray-200 border-0 h-12 px-6 py-2 text-sm flex items-center gap-2 shadow-xl">
+                Contact Us Now
+                <ArrowRight className="w-4 h-4 text-primary" />
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -75,14 +65,14 @@ export const Reviews = ({ topWaveColor = "black" }: { topWaveColor?: "black" | "
               </div>
             </div>
             <p className="text-sm text-gray-700 mb-4 leading-snug">
-              "Tri Refrigeration saved our restaurant's walk-in cooler on a Friday night. Fast, professional, and knew exactly what to do."
+              "Paula's crew took down a massive oak that had been leaning toward our roof for years. They were on time, professional, and left the yard cleaner than when they arrived. Could not be happier — highly recommend!"
             </p>
             <div className="flex items-center justify-between mt-auto">
-              <span className="font-bold text-sm">Jordan M.</span>
+              <span className="font-bold text-sm">Marcus T.</span>
               <img src="https://storage.googleapis.com/revex-reputation-production/assets/google-icon.svg" alt="Google" className="w-5 h-5" />
             </div>
           </div>
-          
+
           {/* Review Card 2 */}
           <div className="bg-white text-black border border-border p-5 rounded-lg shadow-md relative flex flex-col">
             <div className="flex items-center text-yellow-500 mb-3 gap-1.5">
@@ -92,10 +82,10 @@ export const Reviews = ({ topWaveColor = "black" }: { topWaveColor?: "black" | "
               </div>
             </div>
             <p className="text-sm text-gray-700 mb-4 leading-snug">
-              "We rely on them for all our supermarket refrigeration maintenance. Highly recommend their preventative plans."
+              "Had two stumps in the backyard that had been sitting there forever. Paula's team ground them both down in under an hour. Super fair price, no upselling, and the wood chips were raked clean. Will use again."
             </p>
             <div className="flex items-center justify-between mt-auto">
-              <span className="font-bold text-sm">Dana K.</span>
+              <span className="font-bold text-sm">Denise R.</span>
               <img src="https://storage.googleapis.com/revex-reputation-production/assets/google-icon.svg" alt="Google" className="w-5 h-5" />
             </div>
           </div>
@@ -109,10 +99,11 @@ export const Reviews = ({ topWaveColor = "black" }: { topWaveColor?: "black" | "
               </div>
             </div>
             <p className="text-sm text-gray-700 mb-4 leading-snug">
-              "Fixed our commercial oven in no time. Great communication and fair pricing."
+              "Called Paula's the morning after the storm and they were out the same day. A huge ficus had come down across our driveway. The crew worked fast, cleared everything, and the price was completely reasonable. Lifesavers."
             </p>
             <div className="flex items-center justify-between mt-auto">
-              <span className="font-bold text-sm">Chris B.</span>
+              <span className="font-bold text-sm">Kevin A.</span>
+              <img src="https://storage.googleapis.com/revex-reputation-production/assets/google-icon.svg" alt="Google" className="w-5 h-5" />
             </div>
           </div>
         </div>
@@ -123,25 +114,42 @@ export const Reviews = ({ topWaveColor = "black" }: { topWaveColor?: "black" | "
             <div className="flex justify-center text-yellow-500 mb-6">
               {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-6 h-6 fill-current" />)}
             </div>
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase h-12 px-4 py-2 text-base">
-                  Leave us a review
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="sm:max-w-[600px] p-0 bg-transparent border-none shadow-none">
-                <iframe 
-                  src="https://api.leadconnectorhq.com/widget/survey/S7cNKNChxMYfpTUIAXdf" 
-                  style={{ border: "none", width: "100%", height: "600px" }} 
-                  scrolling="no" 
-                  id="S7cNKNChxMYfpTUIAXdf" 
-                  title="survey"
-                />
-              </DialogContent>
-            </Dialog>
+            <Button
+              onClick={() => setIsOpen(true)}
+              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase h-12 px-4 py-2 text-base"
+            >
+              Leave us a review
+            </Button>
           </div>
         </div>
       </div>
+
+      {/* Review Modal */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/70"
+          onClick={() => setIsOpen(false)}
+        >
+          <div
+            className="relative bg-black border border-white/10 rounded-lg shadow-2xl w-full max-w-[600px] p-0 overflow-hidden"
+            onClick={e => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-3 right-3 z-10 text-white opacity-80 hover:opacity-100 transition-opacity"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/survey/7q3FktALio7SiNqAA3md"
+              style={{ border: "none", width: "100%", height: "600px" }}
+              scrolling="no"
+              id="review-survey-modal"
+              title="Leave a Review"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 };

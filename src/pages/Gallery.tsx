@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Reviews } from "@/components/Reviews";
@@ -5,23 +6,26 @@ import { Process } from "@/components/Process";
 import { ServiceAreas } from "@/components/ServiceAreas";
 import { CTA } from "@/components/CTA";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { QuoteForm } from "@/components/QuoteForm";
+import { X } from "lucide-react";
 
 const Gallery = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const gridImages = [
-    "https://vibe.filesafe.space/1778436264577951505/attachments/44b5245f-5e7a-4ac8-af4a-6516d74fd711.png",
-    "https://vibe.filesafe.space/1778436264577951505/attachments/50840071-8c3e-49d7-887f-4d816e97ce81.png",
-    "https://vibe.filesafe.space/1778436264577951505/attachments/dbce6618-f302-4f7b-b169-680309246b07.png",
-    "https://vibe.filesafe.space/1778436264577951505/attachments/d10284c9-b899-433c-bb20-32ae6a9a7c38.png",
-    "https://vibe.filesafe.space/1778436264577951505/attachments/87d1531c-4c8e-498b-911e-ffd1599ecfc4.png",
-    "https://vibe.filesafe.space/1778436264577951505/attachments/a7d4c1c6-fc20-4dab-a693-7a1c9bf920bc.png",
-    "https://vibe.filesafe.space/1778436264577951505/attachments/313af329-52b1-4bd0-bdb5-18478eb1317f.png",
-    "https://vibe.filesafe.space/1778436264577951505/attachments/a7a3f002-ccd7-4930-b9d0-04bc341451b7.png",
-    "https://vibe.filesafe.space/1778436264577951505/attachments/213dc09f-031a-4c61-8f33-03d704f6f4f1.png",
-    "https://vibe.filesafe.space/1778436264577951505/attachments/c1c15a3d-62b3-40cf-b980-e4e2fa0a3729.png",
-    "https://vibe.filesafe.space/1778436264577951505/attachments/78d39b14-86b7-460b-86d1-6b81c1530112.png",
-    "https://vibe.filesafe.space/1778436264577951505/attachments/78c2a408-8dee-43c4-af45-04dac0229bb8.png"
+    "/images/img1.png",
+    "/images/img2.png",
+    "/images/img3.png",
+    "/images/img4.png",
+    "/images/img5.png",
+    "/images/img6.png",
+    "/images/img7.png",
+    "/images/img8.png",
+    "/images/img9.png",
+    "/images/img10.png",
+    "/images/img11.png",
+    "/images/img12.png",
+    "/images/img13.png",
   ];
 
   return (
@@ -30,9 +34,9 @@ const Gallery = () => {
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="relative w-full h-screen min-h-[600px] flex items-center justify-center pt-20">
-          <div 
+          <div
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: 'url("https://vibe.filesafe.space/1778436264577951505/attachments/bae4b4f5-17dc-4e41-a45e-97b195687224.png")' }}
+            style={{ backgroundImage: 'url("/images/hero.png")' }}
           >
             <div className="absolute inset-0 bg-black/60"></div>
           </div>
@@ -44,22 +48,13 @@ const Gallery = () => {
             <p className="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto font-medium mb-8 [text-shadow:_0_1px_5px_rgba(0,0,0,0.5)]">
               See for yourself why our customers love us
             </p>
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button size="lg" className="h-14 px-10 bg-primary hover:bg-primary/90 text-primary-foreground font-black text-lg uppercase tracking-wider rounded-sm shadow-2xl">
-                  Get Free Quote
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="bg-black border border-white/10 p-6 sm:p-8 rounded-lg shadow-2xl max-w-md w-[95vw] sm:w-full [&>button]:text-white [&>button]:opacity-100 [&>button:hover]:opacity-80">
-                <DialogTitle className="text-3xl font-black uppercase text-center text-white mb-2 tracking-tight">
-                  Get A Free Quote
-                </DialogTitle>
-                <DialogDescription className="text-center text-gray-400 mb-6">
-                  Fill out the form below and we'll get back to you shortly.
-                </DialogDescription>
-                <QuoteForm />
-              </DialogContent>
-            </Dialog>
+            <Button
+              size="lg"
+              className="h-14 px-10 bg-primary hover:bg-primary/90 text-primary-foreground font-black text-lg uppercase tracking-wider rounded-sm shadow-2xl"
+              onClick={() => setIsOpen(true)}
+            >
+              Get Free Quote
+            </Button>
           </div>
 
           {/* Bottom wave */}
@@ -85,12 +80,11 @@ const Gallery = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
               {gridImages.map((src, index) => (
                 <div key={index} className="aspect-square overflow-hidden relative group">
-                  <img 
-                    src={src} 
-                    alt={`Gallery image ${index + 1}`} 
+                  <img
+                    src={src}
+                    alt={`Paula's A1 Tree Removal work photo ${index + 1}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-
                 </div>
               ))}
             </div>
@@ -103,6 +97,33 @@ const Gallery = () => {
         <CTA />
       </main>
       <Footer />
+
+      {/* Quote Modal */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/70"
+          onClick={() => setIsOpen(false)}
+        >
+          <div
+            className="relative bg-black border border-white/10 p-6 sm:p-8 rounded-lg shadow-2xl max-w-md w-[95vw] sm:w-full overflow-y-auto max-h-[90vh]"
+            onClick={e => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-3 right-3 text-white opacity-80 hover:opacity-100 transition-opacity"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <h2 className="text-3xl font-black uppercase text-center text-white mb-2 tracking-tight">
+              Get A Free Quote
+            </h2>
+            <p className="text-center text-gray-400 mb-6">
+              Fill out the form below and we'll get back to you shortly.
+            </p>
+            <QuoteForm />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

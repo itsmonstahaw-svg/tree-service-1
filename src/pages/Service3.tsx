@@ -25,7 +25,7 @@ const Service3 = () => {
         <section className="relative w-full min-h-[100vh] flex items-center justify-center text-center pt-32 pb-12 overflow-hidden">
           <div
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: 'url("/images/hero.jpg")' }}
+            style={{ backgroundImage: 'url("/images/hero.png")' }}
           >
             <div className="absolute inset-0 bg-black/60"></div>
           </div>
@@ -77,9 +77,9 @@ const Service3 = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <img src="/images/work1.jpg" alt="Tree trimming in progress" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
-              <img src="/images/work2.jpg" alt="Trimmed trees along a South Florida property" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
-              <img src="/images/work3.jpg" alt="Clean curb appeal after professional tree trimming" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
+              <img src="/images/img7.png" alt="Tree trimming in progress" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
+              <img src="/images/img8.png" alt="Trimmed trees along a South Florida property" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
+              <img src="/images/img9.png" alt="Clean curb appeal after professional tree trimming" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
             </div>
           </div>
         </section>

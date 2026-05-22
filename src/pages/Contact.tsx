@@ -19,7 +19,7 @@ const Contact = () => {
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              'url("https://vibe.filesafe.space/1778436264577951505/attachments/bae4b4f5-17dc-4e41-a45e-97b195687224.png")',
+              'url("/images/hero.png")',
           }}
         >
           <div className="absolute inset-0 bg-black/60" />

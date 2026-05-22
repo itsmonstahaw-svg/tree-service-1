@@ -15,7 +15,7 @@ const BlogPost3 = () => {
         <section className="relative w-full min-h-[60vh] flex items-center justify-center text-center pt-32 pb-24 overflow-hidden">
           <div
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: 'url("/images/hero.jpg")' }}
+            style={{ backgroundImage: 'url("/images/hero.png")' }}
           >
             <div className="absolute inset-0 bg-black/65"></div>
           </div>

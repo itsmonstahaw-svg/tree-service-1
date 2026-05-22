@@ -1,4 +1,4 @@
-import { Facebook, Instagram, MapPin, Users, Clock, ShieldCheck, Heart, Home, ShoppingBag } from "lucide-react";
+import { MapPin, ShieldCheck, Clock, Star, Leaf } from "lucide-react";
 import { motion } from "framer-motion";
 
 const GoogleIcon = ({ className }: { className?: string }) => (
@@ -11,16 +11,16 @@ export const About = () => {
   return (
     <section className="py-12 bg-background border-b border-border/40">
       <div className="w-full max-w-[1200px] mx-auto px-[12px]">
-        {/* Top Stats */}
+        {/* Trust Bar */}
         <div className="flex flex-wrap justify-center gap-x-6 md:gap-x-10 gap-y-6 mb-12 border-b border-border/40 pb-12">
           {[
-            { text: "100% Guaranteed", icon: ShieldCheck },
-            { text: "Commercial & Residential", icon: Home },
-            { text: "Fully Insured", icon: ShieldCheck },
-            { text: "Based in Houston TX", icon: MapPin },
-            { text: "Overtime Available", icon: Clock }
+            { text: "Free Estimates", icon: Star },
+            { text: "Female-Owned & Operated", icon: Leaf },
+            { text: "Fully Licensed & Insured", icon: ShieldCheck },
+            { text: "Based in Lauderhill FL", icon: MapPin },
+            { text: "Satisfaction Guaranteed", icon: Clock }
           ].map((stat, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -40,26 +40,20 @@ export const About = () => {
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">About Us</h2>
             <div className="w-24 h-1 bg-primary"></div>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Tri Refrigeration & HVAC is a trusted provider of commercial and residential HVAC and refrigeration services in Houston, TX and the surrounding metro areas. We specialize in walk-in coolers, freezers, commercial ovens, and air conditioning for supermarkets, restaurants, businesses, and homes. Fully insured and dedicated to keeping your operations running smoothly.
+              Paula's A1 Tree Removal &amp; Stump Grind is a female-owned and operated tree service company based in Lauderhill, FL, proudly serving residential and commercial properties across Broward County. From tree removal and stump grinding to trimming, pruning, storm cleanup, and planting, we bring professional-grade equipment and trained crews to every job. We are fully licensed and insured, and we back every service with a free estimate and a satisfaction guarantee. Our team takes pride in arriving on time, doing the work safely, and leaving your property clean — no mess left behind. Whether you need a single stump ground out or an emergency crew after a storm, Paula's A1 is the South Florida tree service you can count on.
             </p>
             <div className="flex gap-4 pt-4">
-              <a href="https://www.facebook.com/Tripointrefrigeration/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="https://www.instagram.com/TriHVACHouston" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="https://g.page/r/CZoh3-NW4MDcEAE/review" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
+              <a href="/review" className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
                 <GoogleIcon className="w-5 h-5" />
               </a>
             </div>
           </div>
-          
+
           <div className="relative">
             <div className="overflow-hidden rounded-lg">
-              <img 
-                src="https://vibe.filesafe.space/1778436264577951505/attachments/11e141a0-5e2d-46f4-a8e0-15fddf4d91db.png" 
-                alt="Tri Refrigeration & HVAC Team" 
+              <img
+                src="/images/img1.png"
+                alt="Paula's A1 Tree Removal & Stump Grind Team"
                 className="w-full h-auto object-cover"
               />
             </div>

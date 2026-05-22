@@ -1,29 +1,26 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { MapPin } from "lucide-react";
 
-
 export const FAQAndServiceAreas = () => {
   const faqs = [
     {
-      question: "Do you service commercial ovens?",
-      answer: "Yes, we repair commercial ovens, fryers, and all cooking equipment."
+      question: "Do you offer free estimates?",
+      answer: "Yes — every job starts with a free estimate. We'll assess the tree, explain what needs to be done, and give you a clear, upfront price with no hidden fees. There is no obligation to book after receiving your estimate."
     },
     {
-      question: "What areas do you serve?",
-      answer: "We serve Houston, Katy, Sugar Land, Pearland, The Woodlands, and Pasadena."
+      question: "Do you service commercial properties?",
+      answer: "Absolutely. Paula's A1 Tree Removal & Stump Grind handles both residential and commercial properties throughout Broward County, including HOA communities, apartment complexes, retail centers, and commercial landscaping. We carry full liability insurance and workers' compensation coverage for all commercial work."
     },
     {
-      question: "Do you offer maintenance plans?",
-      answer: "Yes, preventative maintenance is available to keep your equipment running."
+      question: "What areas in South Florida do you cover?",
+      answer: "We serve Lauderhill, Fort Lauderdale, Hollywood, Miramar, Pembroke Pines, Plantation, Sunrise, Davie, Tamarac, and Deerfield Beach, as well as surrounding communities throughout Broward County. Call us at (954) 623-0558 to confirm service availability for your address."
     }
   ];
-
-
 
   return (
     <section id="faq-areas" className="py-20 bg-black text-white border-b border-border/40">
       <div className="w-full max-w-[1200px] mx-auto px-[12px] space-y-24">
-        
+
         {/* Top Section: FAQ + Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* FAQ Left */}
@@ -33,8 +30,8 @@ export const FAQAndServiceAreas = () => {
             </h2>
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border-[#849b36]/40 border-b-2">
-                  <AccordionTrigger className="text-left text-lg md:text-xl font-bold hover:text-[#849b36] hover:no-underline transition-colors py-6 flex-row-reverse justify-end gap-4 [&[data-state=open]>svg]:text-[#849b36]">
+                <AccordionItem key={index} value={`item-${index}`} className="border-primary/40 border-b-2">
+                  <AccordionTrigger className="text-left text-lg md:text-xl font-bold hover:text-primary hover:no-underline transition-colors py-6 flex-row-reverse justify-end gap-4 [&[data-state=open]>svg]:text-primary">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-400 text-base leading-relaxed pb-6 pl-8">
@@ -46,9 +43,9 @@ export const FAQAndServiceAreas = () => {
           </div>
           {/* Image Right */}
           <div className="relative rounded-lg overflow-hidden h-[400px] lg:h-[450px]">
-            <img 
-              src="https://vibe.filesafe.space/1778436264577951505/attachments/a4a881a6-2b74-4ee1-bed7-e7b3008b86d9.png" 
-              alt="Tri Refrigeration Services" 
+            <img
+              src="/images/img13.png"
+              alt="Paula's A1 Tree Removal Services"
               className="object-cover w-full h-full absolute inset-0"
             />
           </div>
@@ -59,13 +56,13 @@ export const FAQAndServiceAreas = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Map */}
             <div className="bg-black border border-white/10 rounded-lg shadow-2xl aspect-square md:aspect-[4/3] relative overflow-hidden">
-              <iframe 
-                src="https://maps.google.com/maps?q=4610%20Cashel%20Glen%20Dr,%20Houston,%20TX%2077069&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
+              <iframe
+                src="https://maps.google.com/maps?q=6260%20S%20Falls%20Cir%20Dr%2C%20Lauderhill%2C%20FL%2033319&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="absolute inset-0"
               ></iframe>
@@ -79,20 +76,24 @@ export const FAQAndServiceAreas = () => {
                 </h2>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  "Houston, TX",
-                  "Katy, TX",
-                  "Sugar Land, TX",
-                  "Pearland, TX",
-                  "The Woodlands, TX",
-                  "Pasadena, TX"
+                  "Lauderhill, FL",
+                  "Fort Lauderdale, FL",
+                  "Hollywood, FL",
+                  "Miramar, FL",
+                  "Pembroke Pines, FL",
+                  "Plantation, FL",
+                  "Sunrise, FL",
+                  "Davie, FL",
+                  "Tamarac, FL",
+                  "Deerfield Beach, FL"
                 ].map((area, index) => (
                   <div key={index} className="flex items-center gap-3 bg-black p-4 rounded-lg border border-white/10 shadow-sm text-white">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
-                    <span className="font-bold text-lg">{area}</span>
+                    <span className="font-bold text-base">{area}</span>
                   </div>
                 ))}
               </div>

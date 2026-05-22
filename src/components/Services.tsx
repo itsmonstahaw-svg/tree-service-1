@@ -4,40 +4,52 @@ import { motion } from "framer-motion";
 export const Services = () => {
   const services = [
     {
-      title: "HVAC & Air Conditioning",
-      description: "Commercial and residential rooftop and split system air conditioning installation, repair, and maintenance.",
-      image: "https://vibe.filesafe.space/1778436264577951505/attachments/57caaa70-e41c-4d13-a151-8330eda00cbd.png",
-      href: "/services/hvac-air-conditioning"
+      title: "Tree Removal",
+      description: "Safe, efficient removal of hazardous, dead, or unwanted trees for residential and commercial properties across South Florida.",
+      image: "/images/img1.png",
+      href: "/services/tree-removal"
     },
     {
-      title: "Commercial Refrigeration",
-      description: "Expert service for all types of commercial refrigeration systems in supermarkets and restaurants.",
-      image: "https://vibe.filesafe.space/1778436264577951505/attachments/961f0fae-7331-4e1c-824e-9808381932c0.png",
-      href: "/services/commercial-refrigeration"
+      title: "Stump Grinding",
+      description: "Professional stump grinding using commercial-grade equipment — leaving your yard clean, flat, and ready for whatever comes next.",
+      image: "/images/img2.png",
+      href: "/services/stump-grinding"
     },
     {
-      title: "Residential Refrigeration",
-      description: "Professional repair and maintenance for residential refrigerators and freezers.",
-      image: "https://vibe.filesafe.space/1778436264577951505/attachments/c332c992-ec32-461f-ac83-88ee576cfc17.png",
-      href: "/services/residential-refrigeration"
+      title: "Tree Trimming",
+      description: "Expert trimming to improve tree health, reduce wind resistance, and keep your South Florida property looking its best.",
+      image: "/images/img3.png",
+      href: "/services/tree-trimming"
     },
     {
-      title: "Walk-in Coolers & Freezers",
-      description: "Installation and repair of commercial and residential walk-in coolers and freezers to keep your inventory safe.",
-      image: "https://vibe.filesafe.space/1778436264577951505/attachments/dc92bb99-1383-4df7-981d-f24b6c8a9221.png",
-      href: "/services/walk-in-coolers"
+      title: "Tree Pruning",
+      description: "Structural pruning to strengthen trees, reduce hurricane risk, and extend the lifespan of your most valuable landscape assets.",
+      image: "/images/img4.png",
+      href: "/services/tree-pruning"
     },
     {
-      title: "Restaurant Equipment Repair & Maintenance",
-      description: "Fast and reliable repair services for commercial ovens, fryers, and cooking equipment.",
-      image: "https://vibe.filesafe.space/1778436264577951505/attachments/ea931fb0-2115-4e56-915f-633d726fa9c2.png",
-      href: "/services/restaurant-equipment"
+      title: "Shrub Trimming & Removal",
+      description: "Professional shrub shaping and full removal for HOA-compliant, well-maintained South Florida properties.",
+      image: "/images/img5.png",
+      href: "/services/shrub-trimming-removal"
     },
     {
-      title: "Ice Machine & EMS Systems",
-      description: "Professional installation and maintenance of commercial and residential ice machines and EMS systems.",
-      image: "https://vibe.filesafe.space/1778436264577951505/attachments/a0457b28-7b66-4954-b91b-435f5fd9388d.png",
-      href: "/services/ice-machine-ems"
+      title: "Tree Planting",
+      description: "Expert tree planting with proper siting and species selection for South Florida's climate and your property's long-term needs.",
+      image: "/images/img6.png",
+      href: "/services/tree-planting"
+    },
+    {
+      title: "Tree Cabling & Bracing",
+      description: "Structural support for split or leaning trees — saving valuable trees and reducing storm damage risk before hurricane season.",
+      image: "/images/img7.png",
+      href: "/services/tree-cabling-bracing"
+    },
+    {
+      title: "Storm Cleanup",
+      description: "Fast mobilisation after tropical storms and hurricanes — fallen trees, scattered debris, and emergency limb removal handled promptly.",
+      image: "/images/img8.png",
+      href: "/services/storm-cleanup"
     }
   ];
 
@@ -56,8 +68,8 @@ export const Services = () => {
           <div className="flex-grow h-[2px] bg-primary mb-2 md:mb-4 hidden md:block"></div>
         </div>
 
-        <motion.div 
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-[2px] bg-black border-[2px] border-black"
+        <motion.div
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-[2px] bg-black border-[2px] border-black"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
@@ -65,42 +77,42 @@ export const Services = () => {
             hidden: {},
             visible: {
               transition: {
-                staggerChildren: 0.1
+                staggerChildren: 0.08
               }
             }
           }}
         >
           {services.map((service, index) => (
-            <motion.a 
-              key={index} 
+            <motion.a
+              key={index}
               href={service.href}
               variants={{
                 hidden: { opacity: 0, y: 40 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
               }}
-              className="group relative block overflow-hidden aspect-square sm:aspect-[4/3] lg:aspect-[4/3] bg-black"
+              className="group relative block overflow-hidden aspect-square bg-black"
             >
-              <img 
-                src={service.image} 
-                alt={service.title} 
+              <img
+                src={service.image}
+                alt={service.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-30"
               />
-              
+
               {/* Overlay Description */}
-              <div className="absolute inset-0 flex flex-col justify-center p-8 z-10 pointer-events-none">
+              <div className="absolute inset-0 flex flex-col justify-center p-6 z-10 pointer-events-none">
                 <div className="opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-75">
-                  <p className="text-white text-lg font-medium leading-relaxed text-center drop-shadow-md">
+                  <p className="text-white text-base font-medium leading-relaxed text-center drop-shadow-md">
                     {service.description}
                   </p>
                 </div>
               </div>
-              
+
               {/* Title Badge */}
-              <div className="absolute bottom-6 left-6 z-20 transition-transform duration-500 group-hover:-translate-y-2">
-                <div className="bg-black text-white px-4 py-2.5 text-sm sm:text-base font-black uppercase tracking-wide flex items-center gap-2 shadow-xl rounded-sm">
+              <div className="absolute bottom-4 left-4 z-20 transition-transform duration-500 group-hover:-translate-y-2">
+                <div className="bg-black text-white px-3 py-2 text-sm font-black uppercase tracking-wide flex items-center gap-2 shadow-xl rounded-sm">
                   {service.title}
                   <div className="bg-primary text-primary-foreground rounded-full p-0.5 ml-1">
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="w-3 h-3" />
                   </div>
                 </div>
               </div>

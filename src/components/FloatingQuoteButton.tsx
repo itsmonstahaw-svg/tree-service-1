@@ -45,8 +45,8 @@ export const FloatingQuoteButton = () => {
             </button>
             <div className="flex justify-center mb-4">
               <img
-                src="https://vibe.filesafe.space/1778436264577951505/attachments/1a1d7288-f458-45eb-9f31-db5f96aae826.png"
-                alt="Tri Refrigeration & HVAC Logo"
+                src="/images/logo.png"
+                alt="Paula's A1 Tree Removal & Stump Grind Logo"
                 className="h-16 w-auto object-contain mix-blend-lighten"
               />
             </div>

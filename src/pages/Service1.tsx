@@ -25,7 +25,7 @@ const Service1 = () => {
         <section className="relative w-full min-h-[100vh] flex items-center justify-center text-center pt-32 pb-12 overflow-hidden">
           <div
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: 'url("/images/hero.jpg")' }}
+            style={{ backgroundImage: 'url("/images/hero.png")' }}
           >
             <div className="absolute inset-0 bg-black/60"></div>
           </div>
@@ -77,9 +77,9 @@ const Service1 = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <img src="/images/work1.jpg" alt="Tree removal crew at work" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
-              <img src="/images/work2.jpg" alt="Large tree being sectioned down" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
-              <img src="/images/work3.jpg" alt="Cleared property after tree removal" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
+              <img src="/images/img1.png" alt="Tree removal crew at work" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
+              <img src="/images/img2.png" alt="Large tree being sectioned down" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
+              <img src="/images/img3.png" alt="Cleared property after tree removal" className="w-full h-64 object-cover rounded-lg shadow-md border border-border" />
             </div>
           </div>
         </section>
