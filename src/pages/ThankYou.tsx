@@ -66,13 +66,13 @@ const ThankYou = () => {
                 asChild
                 className="w-full h-16 bg-primary hover:bg-primary/90 text-primary-foreground font-black text-xl uppercase tracking-wider rounded-sm shadow-xl"
               >
-                <a href="mailto:trivietpy@gmail.com">EMAIL: trivietpy@gmail.com</a>
+                <a href="mailto:A1sneakerrestoration@gmail.com">EMAIL: A1sneakerrestoration@gmail.com</a>
               </Button>
-              <Button 
+              <Button
                 asChild
                 className="w-full h-16 bg-primary hover:bg-primary/90 text-primary-foreground font-black text-xl uppercase tracking-wider rounded-sm shadow-xl"
               >
-                <a href="tel:+17139097745">PHONE: (713) 909-7745</a>
+                <a href="tel:+19546230558">PHONE: (954) 623-0558</a>
               </Button>
             </div>
           </div>

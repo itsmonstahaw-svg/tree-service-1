@@ -1,4 +1,4 @@
-import { MapPin, Phone, Facebook, Instagram } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 
 const GoogleIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -11,30 +11,24 @@ export const Footer = () => {
     <footer className="bg-black border-t-2 border-primary text-gray-300">
       <div className="w-full max-w-[1200px] mx-auto px-[12px] py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-12 lg:gap-8">
-          
-      {/* Brand & Contact */}
-      <div className="space-y-6">
-        <h4 className="text-white font-black uppercase tracking-wider">Contact Us</h4>
-        <div className="flex items-center gap-2 text-white font-black text-lg tracking-tighter uppercase">
-          Tri Refrigeration & HVAC
-        </div>
-        <div className="space-y-3">
-          <div className="flex items-center gap-3">
-            <Phone className="w-4 h-4 text-primary shrink-0" />
-            <a href="tel:+17139097745" className="font-bold hover:text-primary transition-colors">(713) 909-7745</a>
-          </div>
+
+          {/* Brand & Contact */}
+          <div className="space-y-6">
+            <h4 className="text-white font-black uppercase tracking-wider">Contact Us</h4>
+            <div className="flex items-center gap-2 text-white font-black text-lg tracking-tighter uppercase">
+              Paula's A1 Tree Removal & Stump Grind
+            </div>
+            <div className="space-y-3">
+              <div className="flex items-center gap-3">
+                <Phone className="w-4 h-4 text-primary shrink-0" />
+                <a href="tel:+19546230558" className="font-bold hover:text-primary transition-colors">(954) 623-0558</a>
+              </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-primary shrink-0" />
-                <span className="font-bold">4610 Cashel Glen Dr, Houston, TX 77069</span>
+                <span className="font-bold">6260 S Falls Cir Dr, Lauderhill, FL 33319</span>
               </div>
               <div className="flex gap-4 pt-2">
-                <a href="https://www.facebook.com/Tripointrefrigeration/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a href="https://www.instagram.com/TriHVACHouston" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a href="https://g.page/r/CZoh3-NW4MDcEAE/review" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
+                <a href="https://g.page/r/review" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
                   <GoogleIcon className="w-5 h-5" />
                 </a>
               </div>
@@ -49,19 +43,22 @@ export const Footer = () => {
               <li><a href="/gallery" className="hover:text-primary transition-colors">Gallery</a></li>
               <li><a href="/blog" className="hover:text-primary transition-colors">Blog</a></li>
               <li><a href="/contact" className="hover:text-primary transition-colors">Contact</a></li>
-              <li><a href="https://g.page/r/CZoh3-NW4MDcEAE/review" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">Review Us</a></li>
+              <li><a href="https://api.leadconnectorhq.com/widget/survey/7q3FktALio7SiNqAA3md" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">Review Us</a></li>
             </ul>
           </div>
-          {/* Shop Links */}
+
+          {/* Services Links */}
           <div className="space-y-6">
             <h4 className="text-white font-black uppercase tracking-wider">Services</h4>
             <ul className="space-y-3">
-              <li><a href="/services/hvac-air-conditioning" className="hover:text-primary transition-colors">HVAC & Air Conditioning</a></li>
-              <li><a href="/services/commercial-refrigeration" className="hover:text-primary transition-colors">Commercial Refrigeration</a></li>
-              <li><a href="/services/walk-in-coolers" className="hover:text-primary transition-colors">Walk-in Coolers & Freezers</a></li>
-              <li><a href="/services/restaurant-equipment" className="hover:text-primary transition-colors">Restaurant Equipment</a></li>
-              <li><a href="/services/ice-machine-ems" className="hover:text-primary transition-colors">Ice Machine & EMS</a></li>
-              <li><a href="/services/residential-refrigeration" className="hover:text-primary transition-colors">Residential Refrigeration</a></li>
+              <li><a href="/services/tree-removal" className="hover:text-primary transition-colors">Tree Removal</a></li>
+              <li><a href="/services/stump-grinding" className="hover:text-primary transition-colors">Stump Grinding</a></li>
+              <li><a href="/services/tree-trimming" className="hover:text-primary transition-colors">Tree Trimming</a></li>
+              <li><a href="/services/tree-pruning" className="hover:text-primary transition-colors">Tree Pruning</a></li>
+              <li><a href="/services/shrub-trimming-removal" className="hover:text-primary transition-colors">Shrub Trimming & Removal</a></li>
+              <li><a href="/services/tree-planting" className="hover:text-primary transition-colors">Tree Planting</a></li>
+              <li><a href="/services/tree-cabling-bracing" className="hover:text-primary transition-colors">Tree Cabling & Bracing</a></li>
+              <li><a href="/services/storm-cleanup" className="hover:text-primary transition-colors">Storm Cleanup</a></li>
             </ul>
           </div>
 
@@ -69,27 +66,32 @@ export const Footer = () => {
           <div className="space-y-6">
             <h4 className="text-white font-black uppercase tracking-wider">Locations</h4>
             <ul className="space-y-3">
-              <li><a href="/locations/houston-tx" className="hover:text-primary transition-colors">Houston, TX</a></li>
-              <li><a href="/locations/katy-tx" className="hover:text-primary transition-colors">Katy, TX</a></li>
-              <li><a href="/locations/sugar-land-tx" className="hover:text-primary transition-colors">Sugar Land, TX</a></li>
-              <li><a href="/locations/pearland-tx" className="hover:text-primary transition-colors">Pearland, TX</a></li>
-              <li><a href="/locations/the-woodlands-tx" className="hover:text-primary transition-colors">The Woodlands, TX</a></li>
+              <li><a href="/locations/lauderhill" className="hover:text-primary transition-colors">Lauderhill</a></li>
+              <li><a href="/locations/fort-lauderdale" className="hover:text-primary transition-colors">Fort Lauderdale</a></li>
+              <li><a href="/locations/hollywood" className="hover:text-primary transition-colors">Hollywood</a></li>
+              <li><a href="/locations/miramar" className="hover:text-primary transition-colors">Miramar</a></li>
+              <li><a href="/locations/pembroke-pines" className="hover:text-primary transition-colors">Pembroke Pines</a></li>
+              <li><a href="/locations/plantation" className="hover:text-primary transition-colors">Plantation</a></li>
+              <li><a href="/locations/sunrise" className="hover:text-primary transition-colors">Sunrise</a></li>
+              <li><a href="/locations/davie" className="hover:text-primary transition-colors">Davie</a></li>
+              <li><a href="/locations/tamarac" className="hover:text-primary transition-colors">Tamarac</a></li>
+              <li><a href="/locations/deerfield-beach" className="hover:text-primary transition-colors">Deerfield Beach</a></li>
             </ul>
           </div>
+
           {/* Operating Hours */}
           <div className="space-y-6">
             <h4 className="text-white font-black uppercase tracking-wider">Operating Hours</h4>
             <ul className="space-y-3 font-mono text-sm">
-              <li className="flex justify-between"><span>Mon - Fri:</span> <span>7:30am - 5:00pm</span></li>
-              <li className="flex justify-between"><span>Saturday:</span> <span>Overtime Available</span></li>
-              <li className="flex justify-between text-primary font-bold"><span>Sunday:</span> <span>Overtime Available</span></li>
+              <li className="flex justify-between"><span>Mon – Sat:</span> <span>7:00am – 7:00pm</span></li>
+              <li className="flex justify-between text-primary font-bold"><span>Sunday:</span> <span>7:00am – 5:00pm</span></li>
             </ul>
           </div>
 
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Tri Refrigeration & HVAC. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Paula's A1 Tree Removal & Stump Grind. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="/terms" className="hover:text-white transition-colors">Terms & Conditions</a>

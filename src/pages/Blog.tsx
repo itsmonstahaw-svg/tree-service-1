@@ -8,40 +8,40 @@ import { FloatingQuoteButton } from "@/components/FloatingQuoteButton";
 
 const blogPosts = [
   {
-    title: "WHY HOUSTON RESTAURANTS NEED A DEDICATED COMMERCIAL REFRIGERATION SPECIALIST",
+    title: "WHY LAUDERHILL HOMEOWNERS SHOULD NEVER DIY TREE REMOVAL",
     description:
-      "Cover the risks of equipment downtime, food spoilage costs, health code violations, and why a commercial-only specialist like Tri Refrigeration & HVAC is the right call for Houston restaurant owners.",
-    href: "/blog/why-houston-restaurants-need-specialist",
+      "The hidden dangers of removing trees yourself — falling limbs, power lines, no insurance, and unpredictable tree behavior. Why licensed professionals protect your property and your safety.",
+    href: "/blog/why-lauderhill-homeowners-should-never-diy-tree-removal",
   },
   {
-    title: "WALK-IN COOLER NOT HOLDING TEMPERATURE? HERE'S WHAT TO DO",
+    title: "SIGNS YOUR TREE IS DANGEROUS AND NEEDS IMMEDIATE REMOVAL IN SOUTH FLORIDA",
     description:
-      "Cover common causes, what business owners should check first, when to call a technician, and how Tri Refrigeration & HVAC serves Houston and surrounding areas.",
-    href: "/blog/walk-in-cooler-not-holding-temperature",
+      "From leaning trunks to fungal growth and split branches — learn the warning signs that your tree is a hazard, and why South Florida's hurricane season makes early action critical.",
+    href: "/blog/signs-your-tree-is-dangerous-needs-immediate-removal",
   },
   {
-    title: "COMMERCIAL HVAC MAINTENANCE: WHY HOUSTON BUSINESSES CAN'T AFFORD TO SKIP IT",
+    title: "STUMP GRINDING VS STUMP REMOVAL: WHAT'S THE DIFFERENCE AND WHICH DO YOU NEED?",
     description:
-      "Cover the Houston heat, the cost of unexpected failures, preventative maintenance benefits, and how Tri Refrigeration & HVAC helps commercial properties stay running.",
-    href: "/blog/commercial-hvac-maintenance-houston",
+      "Not sure whether to grind or fully extract that leftover stump? We break down the difference, the costs, and which option makes the most sense for South Florida homeowners.",
+    href: "/blog/stump-grinding-vs-stump-removal-difference",
   },
   {
-    title: "THE TRUE COST OF A BROKEN WALK-IN FREEZER FOR FOOD SERVICE BUSINESSES",
+    title: "HOW SOUTH FLORIDA'S HURRICANE SEASON AFFECTS YOUR TREES — AND WHAT TO DO ABOUT IT",
     description:
-      "Cover lost stock, health inspections, emergency repair costs, and how fast response from Tri Refrigeration & HVAC protects Houston businesses.",
-    href: "/blog/true-cost-broken-walk-in-freezer",
+      "Hurricane season runs June through November and puts every tree on your property at risk. Learn how to prepare, what to do after a storm, and how Paula's A1 helps year-round.",
+    href: "/blog/south-florida-hurricane-season-affects-trees",
   },
   {
-    title: "HVAC & REFRIGERATION IN KATY, SUGAR LAND & THE WOODLANDS: WHAT COMMERCIAL BUSINESSES NEED TO KNOW",
+    title: "HOW TO CHOOSE A TREE SERVICE COMPANY IN FORT LAUDERDALE",
     description:
-      "Cover the growth of commercial food service in the Houston suburbs, equipment demands, and how Tri Refrigeration & HVAC serves the wider Houston metro area.",
-    href: "/blog/hvac-refrigeration-katy-sugar-land-woodlands",
+      "Licensing, insurance, equipment, and reviews — here's what to look for when hiring a tree service in Fort Lauderdale, and the red flags that should make you walk away.",
+    href: "/blog/how-to-choose-tree-service-company-fort-lauderdale",
   },
   {
-    title: "HOW TO CHOOSE THE RIGHT COMMERCIAL HVAC & REFRIGERATION TECHNICIAN IN HOUSTON TX",
+    title: "THE TRUE COST OF IGNORING A DAMAGED TREE ON YOUR PROPERTY",
     description:
-      "Cover what to look for: commercial-only experience, insurance, response time, overtime availability, and why Tri Refrigeration & HVAC ticks every box.",
-    href: "/blog/choose-right-commercial-hvac-technician-houston",
+      "A damaged tree doesn't get better on its own. Understand the financial and legal risks of waiting too long — from emergency removal costs to liability for neighbour property damage.",
+    href: "/blog/true-cost-ignoring-damaged-tree-property",
   },
 ];
 
@@ -55,8 +55,7 @@ const Blog = () => {
         <div
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage:
-              'url("https://vibe.filesafe.space/1778436264577951505/attachments/bae4b4f5-17dc-4e41-a45e-97b195687224.png")',
+            backgroundImage: 'url("/images/hero.jpg")',
           }}
         >
           <div className="absolute inset-0 bg-black/60" />

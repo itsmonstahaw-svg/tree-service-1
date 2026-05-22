@@ -77,7 +77,7 @@ export const QuoteForm = () => {
         body: JSON.stringify(trackingPayload),
       }).catch(() => {});
 
-      await fetch("https://services.leadconnectorhq.com/hooks/v6nfbTGbKTHqcU0RRfyn/webhook-trigger/cb9cb538-2c85-4b50-98b8-5ea7a401c8c4", {
+      await fetch("https://services.leadconnectorhq.com/hooks/UrBMHq2cdFUsQ6WGPv5h/webhook-trigger/36d3a64c-bc6a-48e3-83d5-4556c828a18a", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -125,13 +125,13 @@ export const QuoteForm = () => {
         <div className="flex items-start gap-2">
           <Checkbox id={`terms1-${id}`} name="smsConsent" className="mt-0.5 border-gray-400 data-[state=checked]:bg-primary data-[state=checked]:border-primary w-3.5 h-3.5" required />
           <label htmlFor={`terms1-${id}`} className="text-[10px] text-gray-300 leading-tight">
-            I Consent to Receive SMS Notifications, Alerts from Tri Refrigeration & HVAC. Message frequency varies. Message & data rates may apply. Text HELP to (713) 909-7745 for assistance. You can reply STOP to unsubscribe at any time.
+            I Consent to Receive SMS Notifications, Alerts from Paula's A1 Tree Removal & Stump Grind. Message frequency varies. Message & data rates may apply. Text HELP to (954) 623-0558 for assistance. You can reply STOP to unsubscribe at any time.
           </label>
         </div>
         <div className="flex items-start gap-2">
           <Checkbox id={`terms2-${id}`} name="marketingConsent" className="mt-0.5 border-gray-400 data-[state=checked]:bg-primary data-[state=checked]:border-primary w-3.5 h-3.5" />
           <label htmlFor={`terms2-${id}`} className="text-[10px] text-gray-300 leading-tight">
-            By checking this box I agree to receive occasional marketing messages from Tri Refrigeration & HVAC.
+            By checking this box I agree to receive occasional marketing messages from Paula's A1 Tree Removal & Stump Grind.
           </label>
         </div>
       </div>

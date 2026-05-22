@@ -4,126 +4,162 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-const BASE_URL = 'https://trirefrigerationhvac.com'
+const BASE_URL = 'https://[client-domain]'
 
 const routesMeta = {
   '/': {
-    title: 'Tri Refrigeration & HVAC | Houston, TX',
-    description: 'Expert commercial & residential HVAC, refrigeration, walk-in coolers, and restaurant equipment repair in Houston, TX. Fully insured. Call (713) 909-7745.',
+    title: "Paula's A1 Tree Removal & Stump Grind | Lauderhill, FL",
+    description: "Female-owned tree removal, stump grinding, trimming & storm cleanup in Lauderhill, FL. Licensed, insured, free estimates. Call (954) 623-0558.",
   },
   '/home': {
-    title: 'Tri Refrigeration & HVAC | Houston, TX',
-    description: 'Expert commercial & residential HVAC, refrigeration, walk-in coolers, and restaurant equipment repair in Houston, TX. Fully insured. Call (713) 909-7745.',
+    title: "Paula's A1 Tree Removal & Stump Grind | Lauderhill, FL",
+    description: "Female-owned tree removal, stump grinding, trimming & storm cleanup in Lauderhill, FL. Licensed, insured, free estimates. Call (954) 623-0558.",
   },
-  '/services/commercial-refrigeration': {
-    title: 'Commercial Refrigeration Repair Houston TX | Tri Refrigeration & HVAC',
-    description: 'Expert commercial refrigeration repair, maintenance & installation for Houston TX restaurants and supermarkets. Walk-in coolers, freezers & display cases. Call (713) 909-7745.',
+
+  // Services
+  '/services/tree-removal': {
+    title: "Tree Removal in Lauderhill, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Professional tree removal for residential & commercial properties across South Florida. Licensed, insured, free estimates. Call (954) 623-0558.",
   },
-  '/services/hvac-air-conditioning': {
-    title: 'HVAC & Air Conditioning Houston TX | Tri Refrigeration & HVAC',
-    description: 'Commercial & residential HVAC installation, repair & maintenance in Houston TX. Rooftop units, split systems & more. Fully insured. Call (713) 909-7745.',
+  '/services/stump-grinding': {
+    title: "Stump Grinding in Lauderhill, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Complete stump grinding service using professional-grade equipment. Leaves your yard clean and stump-free. Free estimates. Call (954) 623-0558.",
   },
-  '/services/ice-machine-ems': {
-    title: 'Ice Machine Repair & EMS Systems Houston TX | Tri Refrigeration & HVAC',
-    description: 'Commercial ice machine repair, installation & sanitation in Houston TX. Fast response, fully insured. Call (713) 909-7745.',
+  '/services/tree-trimming': {
+    title: "Tree Trimming in Lauderhill, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Expert tree trimming to improve health, safety & curb appeal across South Florida. Licensed & insured. Free estimates. Call (954) 623-0558.",
   },
-  '/services/residential-refrigeration': {
-    title: 'Residential Refrigeration Repair Houston TX | Tri Refrigeration & HVAC',
-    description: 'Professional home refrigerator & freezer repair in Houston TX. Fast, reliable, fully insured. Call (713) 909-7745.',
+  '/services/tree-pruning': {
+    title: "Tree Pruning in Lauderhill, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Structural tree pruning to improve resilience, reduce hurricane risk & extend tree lifespan in South Florida. Free estimates. Call (954) 623-0558.",
   },
-  '/services/restaurant-equipment': {
-    title: 'Restaurant Equipment Repair Houston TX | Tri Refrigeration & HVAC',
-    description: 'Commercial restaurant equipment repair & maintenance in Houston TX. Ovens, fryers, coolers & more. Minimise downtime. Call (713) 909-7745.',
+  '/services/shrub-trimming-removal': {
+    title: "Shrub Trimming & Removal in Lauderhill, FL | Paula's A1 Tree Removal",
+    description: "Professional shrub trimming and full removal for HOA-compliant, well-maintained South Florida properties. Free estimates. Call (954) 623-0558.",
   },
-  '/services/walk-in-coolers': {
-    title: 'Walk-In Cooler & Freezer Repair Houston TX | Tri Refrigeration & HVAC',
-    description: 'Walk-in cooler & freezer repair, installation & maintenance in Houston TX. Overtime available. Fully insured. Call (713) 909-7745.',
+  '/services/tree-planting': {
+    title: "Tree Planting in Lauderhill, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Expert tree planting with proper siting and species selection for South Florida's climate. Residential & commercial. Call (954) 623-0558.",
   },
-  '/locations/houston-tx': {
-    title: 'HVAC & Refrigeration Houston TX | Tri Refrigeration & HVAC',
-    description: 'Houston TX HVAC and refrigeration services for restaurants, supermarkets & businesses. Serving Downtown, River Oaks, Galleria & surrounding areas. Call (713) 909-7745.',
+  '/services/tree-cabling-bracing': {
+    title: "Tree Cabling & Bracing in Lauderhill, FL | Paula's A1 Tree Removal",
+    description: "Structural tree cabling and bracing to save valuable trees and reduce hurricane damage risk in South Florida. Free estimates. Call (954) 623-0558.",
   },
-  '/locations/katy-tx': {
-    title: 'HVAC & Refrigeration Katy TX | Tri Refrigeration & HVAC',
-    description: 'Katy TX HVAC and refrigeration repair & installation. Serving Cinco Ranch, Cross Creek Ranch, Kelliwood & beyond. Call (713) 909-7745.',
+  '/services/storm-cleanup': {
+    title: "Storm Cleanup in Lauderhill, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Fast storm cleanup for fallen trees, branches & debris across South Florida. Licensed, insured, free estimates. Call (954) 623-0558.",
   },
-  '/locations/pearland-tx': {
-    title: 'HVAC & Refrigeration Pearland TX | Tri Refrigeration & HVAC',
-    description: 'Pearland TX HVAC and refrigeration services for commercial and residential clients. Fast, reliable, fully insured. Call (713) 909-7745.',
+
+  // Locations
+  '/locations/lauderhill': {
+    title: "Tree Removal in Lauderhill, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Local tree removal, stump grinding & trimming in Lauderhill, FL. Female-owned, licensed & insured. Serving Inverrary, Pine Island & more. Call (954) 623-0558.",
   },
-  '/locations/sugar-land-tx': {
-    title: 'HVAC & Refrigeration Sugar Land TX | Tri Refrigeration & HVAC',
-    description: 'Sugar Land TX HVAC and refrigeration repair & maintenance. Experienced, fully insured technicians. Call (713) 909-7745.',
+  '/locations/fort-lauderdale': {
+    title: "Tree Removal in Fort Lauderdale, FL | Paula's A1 Tree Removal",
+    description: "Professional tree removal & stump grinding in Fort Lauderdale. Serving Downtown, Victoria Park, Coral Ridge & surrounding areas. Call (954) 623-0558.",
   },
-  '/locations/the-woodlands-tx': {
-    title: 'HVAC & Refrigeration The Woodlands TX | Tri Refrigeration & HVAC',
-    description: 'The Woodlands TX HVAC and refrigeration services. Commercial and residential. Overtime available. Call (713) 909-7745.',
+  '/locations/hollywood': {
+    title: "Tree Removal in Hollywood, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Tree removal, trimming & storm cleanup in Hollywood, FL. Serving Emerald Hills, West Lake, Dania Beach & beyond. Free estimates. Call (954) 623-0558.",
   },
-  '/gallery': {
-    title: 'Gallery | Tri Refrigeration & HVAC Houston TX',
-    description: 'See our work — commercial refrigeration installs, HVAC systems, walk-in coolers & restaurant equipment across Houston TX.',
+  '/locations/miramar': {
+    title: "Tree Removal in Miramar, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Licensed tree removal & stump grinding in Miramar, FL. Serving Monarch Lakes, Sunset Lakes, Riviera Isles & more. Call (954) 623-0558.",
   },
+  '/locations/pembroke-pines': {
+    title: "Tree Removal in Pembroke Pines, FL | Paula's A1 Tree Removal",
+    description: "Professional tree removal, stump grinding & trimming in Pembroke Pines. Serving Chapel Trail, Silver Lakes, Century Village & more. Call (954) 623-0558.",
+  },
+  '/locations/plantation': {
+    title: "Tree Removal in Plantation, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Expert tree removal & storm cleanup in Plantation, FL. Serving Plantation Acres, Jacaranda, Central Park & surrounding areas. Call (954) 623-0558.",
+  },
+  '/locations/sunrise': {
+    title: "Tree Removal in Sunrise, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Tree removal, stump grinding & trimming in Sunrise, FL. Serving Sawgrass, Welleby, Springtree & beyond. Free estimates. Call (954) 623-0558.",
+  },
+  '/locations/davie': {
+    title: "Tree Removal in Davie, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Professional tree service in Davie, FL. Serving Orange Drive, Nova, Pine Island Ridge & rural properties. Licensed & insured. Call (954) 623-0558.",
+  },
+  '/locations/tamarac': {
+    title: "Tree Removal in Tamarac, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Tree removal, stump grinding & storm cleanup in Tamarac, FL. Serving Woodlands, Kings Point, Mainlands & more. Call (954) 623-0558.",
+  },
+  '/locations/deerfield-beach': {
+    title: "Tree Removal in Deerfield Beach, FL | Paula's A1 Tree Removal",
+    description: "Coastal tree removal & stump grinding in Deerfield Beach, FL. Serving Quiet Waters, Hillsboro, Century Village & more. Call (954) 623-0558.",
+  },
+
+  // Blog
   '/blog': {
-    title: 'Blog | Tri Refrigeration & HVAC Houston TX',
-    description: 'HVAC and refrigeration tips, maintenance guides & industry news from Tri Refrigeration & HVAC in Houston TX.',
+    title: "Tree Service Blog | Paula's A1 Tree Removal & Stump Grind",
+    description: "Tree care tips, South Florida storm prep advice, and expert guidance from Paula's A1 Tree Removal & Stump Grind in Lauderhill, FL.",
   },
-  '/blog/why-houston-restaurants-need-specialist': {
-    title: 'Why Houston Restaurants Need A Refrigeration Specialist | Tri Refrigeration & HVAC',
-    description: 'Discover why Houston restaurants and food service businesses need a dedicated commercial refrigeration specialist to protect their operations and bottom line.',
+  '/blog/why-lauderhill-homeowners-should-never-diy-tree-removal': {
+    title: "Why Lauderhill Homeowners Should Never DIY Tree Removal | Paula's A1",
+    description: "The hidden dangers of DIY tree removal — falling limbs, power lines, no insurance coverage. Why licensed professionals protect your property and safety.",
   },
-  '/blog/walk-in-cooler-not-holding-temperature': {
-    title: 'Walk-In Cooler Not Holding Temperature? Here\'s What To Do | Tri Refrigeration & HVAC',
-    description: 'Step-by-step guide for Houston food service businesses when a walk-in cooler stops holding temperature. When to call a professional.',
+  '/blog/signs-your-tree-is-dangerous-needs-immediate-removal': {
+    title: "Signs Your Tree Is Dangerous & Needs Removal in South Florida | Paula's A1",
+    description: "7 warning signs a tree is a hazard to your South Florida property. Learn what to look for and when to call a professional tree removal company.",
   },
-  '/blog/commercial-hvac-maintenance-houston': {
-    title: 'Commercial HVAC Maintenance: Why Houston Businesses Can\'t Skip It | Tri Refrigeration & HVAC',
-    description: 'Why regular HVAC maintenance is essential for Houston businesses and homeowners. Cost savings, efficiency, and avoiding emergency breakdowns.',
+  '/blog/stump-grinding-vs-stump-removal-difference': {
+    title: "Stump Grinding vs Stump Removal: Which Do You Need? | Paula's A1",
+    description: "The difference between stump grinding and full stump removal explained. Costs, benefits, and which option is right for South Florida homeowners.",
   },
-  '/blog/true-cost-broken-walk-in-freezer': {
-    title: 'The True Cost Of A Broken Walk-In Freezer | Tri Refrigeration & HVAC',
-    description: 'What a walk-in freezer breakdown really costs Houston food service operations — spoilage, downtime, lost revenue, and how to prevent it.',
+  '/blog/south-florida-hurricane-season-affects-trees': {
+    title: "How Hurricane Season Affects Your Trees in South Florida | Paula's A1",
+    description: "How hurricanes and tropical storms damage South Florida trees — and what to do before, during, and after storm season to protect your property.",
   },
-  '/blog/hvac-refrigeration-katy-sugar-land-woodlands': {
-    title: 'HVAC & Refrigeration In Katy, Sugar Land & The Woodlands | Tri Refrigeration & HVAC',
-    description: 'What businesses and homeowners in Katy, Sugar Land & The Woodlands need to know about commercial HVAC and refrigeration services.',
+  '/blog/how-to-choose-tree-service-company-fort-lauderdale': {
+    title: "How to Choose a Tree Service Company in Fort Lauderdale | Paula's A1",
+    description: "What to look for when hiring a tree service in Fort Lauderdale — licensing, insurance, equipment, reviews, and red flags to avoid.",
   },
-  '/blog/choose-right-commercial-hvac-technician-houston': {
-    title: 'How To Choose The Right HVAC Technician In Houston TX | Tri Refrigeration & HVAC',
-    description: 'Key factors to consider when choosing a commercial HVAC and refrigeration technician in Houston TX. Licensing, experience, and response times.',
+  '/blog/true-cost-ignoring-damaged-tree-property': {
+    title: "The True Cost of Ignoring a Damaged Tree on Your Property | Paula's A1",
+    description: "Financial and legal risks of ignoring a damaged tree — emergency removal costs, neighbour liability, insurance denial, and rising removal expenses.",
+  },
+
+  // Fixed pages
+  '/gallery': {
+    title: "Our Work | Paula's A1 Tree Removal & Stump Grind",
+    description: "See photos from Paula's A1 Tree Removal & Stump Grind — tree removals, stump grinding, trimming, and storm cleanup across South Florida.",
   },
   '/contact': {
-    title: 'Contact Us | Tri Refrigeration & HVAC Houston TX',
-    description: 'Contact Tri Refrigeration & HVAC in Houston TX. Call (713) 909-7745 or send a message for fast, professional HVAC and refrigeration service.',
+    title: "Contact Us | Paula's A1 Tree Removal & Stump Grind",
+    description: "Contact Paula's A1 Tree Removal & Stump Grind in Lauderhill, FL. Call (954) 623-0558 or request a free quote online.",
   },
   '/review': {
-    title: 'Leave A Review | Tri Refrigeration & HVAC',
-    description: 'Enjoyed our service? Leave a review for Tri Refrigeration & HVAC and help other Houston businesses find reliable HVAC and refrigeration repair.',
+    title: "Leave a Review | Paula's A1 Tree Removal & Stump Grind",
+    description: "Enjoyed our service? Leave a review for Paula's A1 Tree Removal & Stump Grind and help other South Florida homeowners find great tree care.",
   },
   '/discount': {
-    title: '10% Discount Offer | Tri Refrigeration & HVAC Houston TX',
-    description: 'Claim your 10% discount on HVAC and refrigeration services in Houston TX. Contact Tri Refrigeration & HVAC today.',
+    title: "10% Discount for Return Customers | Paula's A1 Tree Removal",
+    description: "Return customers and referrals get 10% off at Paula's A1 Tree Removal & Stump Grind. Claim your discount today.",
   },
-  '/client-submit': {
-    title: 'Client Submission | Tri Refrigeration & HVAC',
-    description: 'Submit your service request to Tri Refrigeration & HVAC in Houston TX.',
+  '/client-review': {
+    title: "Client Follow-Up | Paula's A1 Tree Removal & Stump Grind",
+    description: "Client follow-up form for Paula's A1 Tree Removal & Stump Grind.",
   },
   '/thank-you': {
-    title: 'Thank You | Tri Refrigeration & HVAC',
-    description: 'Thank you for contacting Tri Refrigeration & HVAC. We\'ll be in touch shortly.',
+    title: "Thank You | Paula's A1 Tree Removal & Stump Grind",
+    description: "Thank you for contacting Paula's A1 Tree Removal & Stump Grind. We'll be in touch shortly.",
   },
   '/privacy-policy': {
-    title: 'Privacy Policy | Tri Refrigeration & HVAC',
-    description: 'Privacy policy for Tri Refrigeration & HVAC in Houston TX.',
+    title: "Privacy Policy | Paula's A1 Tree Removal & Stump Grind",
+    description: "Privacy policy for Paula's A1 Tree Removal & Stump Grind. Learn how we collect and protect your personal information.",
   },
   '/terms': {
-    title: 'Terms & Conditions | Tri Refrigeration & HVAC',
-    description: 'Terms and conditions for Tri Refrigeration & HVAC in Houston TX.',
+    title: "Terms & Conditions | Paula's A1 Tree Removal & Stump Grind",
+    description: "Terms and conditions for Paula's A1 Tree Removal & Stump Grind — governing law: Florida.",
   },
 }
 
 const DEFAULT_META = {
-  title: 'Tri Refrigeration & HVAC | Houston, TX',
-  description: 'Expert commercial & residential HVAC, refrigeration, walk-in coolers, and restaurant equipment repair in Houston, TX. Call (713) 909-7745.',
+  title: "Paula's A1 Tree Removal & Stump Grind | Lauderhill, FL",
+  description: "Female-owned tree removal, stump grinding, trimming & storm cleanup in South Florida. Licensed, insured, free estimates. Call (954) 623-0558.",
 }
 
 const routes = Object.keys(routesMeta)

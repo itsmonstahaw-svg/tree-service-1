@@ -25,15 +25,15 @@ const Discount = () => {
               Get Your Special Discount
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Fill out the form below to claim your exclusive discount on our premium commercial and residential HVAC & refrigeration services.
+              Fill out the form below to claim your 10% discount for return customers and referrals from Paula's A1 Tree Removal & Stump Grind.
             </p>
           </div>
           
           <div className="bg-card rounded-xl p-4 md:p-8 shadow-sm border border-border">
             <iframe
-              src="https://api.leadconnectorhq.com/widget/form/zK4pocVnnDe4Uet3yc9o"
+              src="https://api.leadconnectorhq.com/widget/form/nQ3z0HnMLLvsk2yX6dsY"
               style={{ width: "100%", height: "100%", border: "none", borderRadius: "10px" }}
-              id="inline-zK4pocVnnDe4Uet3yc9o"
+              id="inline-nQ3z0HnMLLvsk2yX6dsY"
               data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"
               data-trigger-value=""
@@ -41,11 +41,11 @@ const Discount = () => {
               data-activation-value=""
               data-deactivation-type="neverDeactivate"
               data-deactivation-value=""
-              data-form-name="Discount Form "
+              data-form-name="Discount Form"
               data-height="800"
-              data-layout-iframe-id="inline-zK4pocVnnDe4Uet3yc9o"
-              data-form-id="zK4pocVnnDe4Uet3yc9o"
-              title="Discount Form "
+              data-layout-iframe-id="inline-nQ3z0HnMLLvsk2yX6dsY"
+              data-form-id="nQ3z0HnMLLvsk2yX6dsY"
+              title="Discount Form"
             />
           </div>
         </div>
