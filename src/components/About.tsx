@@ -40,7 +40,7 @@ export const About = () => {
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">About Us</h2>
             <div className="w-24 h-1 bg-primary"></div>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Paula's A1 Tree Removal &amp; Stump Grind is a female-owned and operated tree service company based in Lauderhill, FL, proudly serving residential and commercial properties across Broward County. From tree removal and stump grinding to trimming, pruning, storm cleanup, and planting, we bring professional-grade equipment and trained crews to every job. We are fully licensed and insured, and we back every service with a free estimate and a satisfaction guarantee. Our team takes pride in arriving on time, doing the work safely, and leaving your property clean — no mess left behind. Whether you need a single stump ground out or an emergency crew after a storm, Paula's A1 is the South Florida tree service you can count on.
+              Paula's A1 Tree Removal &amp; Stump Grind is a female-owned and operated tree service company based in Lauderhill, FL, serving residential and commercial properties across Broward County. Fully licensed and insured, we handle everything from tree removal and stump grinding to trimming, pruning, and storm cleanup — backed by free estimates and a satisfaction guarantee. Paula's A1 is the South Florida tree service you can count on.
             </p>
             <div className="flex gap-4 pt-4">
               <a href="/review" className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">
@@ -54,7 +54,7 @@ export const About = () => {
               <img
                 src="/images/about_us.png"
                 alt="Paula's A1 Tree Removal & Stump Grind Team"
-                className="w-full h-auto object-cover"
+                className="w-full h-[360px] object-cover object-center"
               />
             </div>
             {/* Decorative element */}
