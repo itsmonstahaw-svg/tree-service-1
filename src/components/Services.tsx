@@ -6,49 +6,49 @@ export const Services = () => {
     {
       title: "Tree Removal",
       description: "Safe, efficient removal of hazardous, dead, or unwanted trees for residential and commercial properties across South Florida.",
-      image: "/images/img1.png",
+      image: "/images/tree_removal.png",
       href: "/services/tree-removal"
     },
     {
       title: "Stump Grinding",
       description: "Professional stump grinding using commercial-grade equipment — leaving your yard clean, flat, and ready for whatever comes next.",
-      image: "/images/img2.png",
+      image: "/images/stump_grinding.png",
       href: "/services/stump-grinding"
     },
     {
       title: "Tree Trimming",
       description: "Expert trimming to improve tree health, reduce wind resistance, and keep your South Florida property looking its best.",
-      image: "/images/img3.png",
+      image: "/images/tree_trimming.png",
       href: "/services/tree-trimming"
     },
     {
       title: "Tree Pruning",
       description: "Structural pruning to strengthen trees, reduce hurricane risk, and extend the lifespan of your most valuable landscape assets.",
-      image: "/images/img4.png",
+      image: "/images/tree_pruning.png",
       href: "/services/tree-pruning"
     },
     {
       title: "Shrub Trimming & Removal",
       description: "Professional shrub shaping and full removal for HOA-compliant, well-maintained South Florida properties.",
-      image: "/images/img5.png",
+      image: "/images/shrub_trimming.png",
       href: "/services/shrub-trimming-removal"
     },
     {
       title: "Tree Planting",
       description: "Expert tree planting with proper siting and species selection for South Florida's climate and your property's long-term needs.",
-      image: "/images/img6.png",
+      image: "/images/tree_planting.png",
       href: "/services/tree-planting"
     },
     {
       title: "Tree Cabling & Bracing",
       description: "Structural support for split or leaning trees — saving valuable trees and reducing storm damage risk before hurricane season.",
-      image: "/images/img7.png",
+      image: "/images/tree_cabling.png",
       href: "/services/tree-cabling-bracing"
     },
     {
       title: "Storm Cleanup",
       description: "Fast mobilisation after tropical storms and hurricanes — fallen trees, scattered debris, and emergency limb removal handled promptly.",
-      image: "/images/img8.png",
+      image: "/images/storm_cleanup.png",
       href: "/services/storm-cleanup"
     }
   ];
