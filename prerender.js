@@ -9,11 +9,11 @@ const BASE_URL = 'https://[client-domain]'
 const routesMeta = {
   '/': {
     title: "Paula's A1 Tree Removal & Stump Grind | Lauderhill, FL",
-    description: "Female-owned tree removal, stump grinding, trimming & storm cleanup in Lauderhill, FL. Licensed, insured, free estimates. Call (954) 623-0558.",
+    description: "Female-owned tree removal, stump grinding, trimming & storm cleanup in Lauderhill, FL — Licensed, Insured & Free Estimates. Serving Fort Lauderdale, Miami, Hollywood, Pembroke Pines & all of Broward County. Call (954) 623-0558.",
   },
   '/home': {
     title: "Paula's A1 Tree Removal & Stump Grind | Lauderhill, FL",
-    description: "Female-owned tree removal, stump grinding, trimming & storm cleanup in Lauderhill, FL. Licensed, insured, free estimates. Call (954) 623-0558.",
+    description: "Female-owned tree removal, stump grinding, trimming & storm cleanup in Lauderhill, FL — Licensed, Insured & Free Estimates. Serving Fort Lauderdale, Miami, Hollywood, Pembroke Pines & all of Broward County. Call (954) 623-0558.",
   },
 
   // Services
@@ -167,7 +167,7 @@ const routesMeta = {
 
 const DEFAULT_META = {
   title: "Paula's A1 Tree Removal & Stump Grind | Lauderhill, FL",
-  description: "Female-owned tree removal, stump grinding, trimming & storm cleanup in South Florida. Licensed, insured, free estimates. Call (954) 623-0558.",
+  description: "Female-owned tree removal, stump grinding, trimming & storm cleanup in Lauderhill, FL — Licensed, Insured & Free Estimates. Serving Fort Lauderdale, Miami, Hollywood, Pembroke Pines & all of Broward County. Call (954) 623-0558.",
 }
 
 const routes = Object.keys(routesMeta)
