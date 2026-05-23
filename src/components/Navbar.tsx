@@ -48,6 +48,8 @@ export const Navbar = () => {
         { name: "Davie", href: "/locations/davie" },
         { name: "Tamarac", href: "/locations/tamarac" },
         { name: "Deerfield Beach", href: "/locations/deerfield-beach" },
+        { name: "Miami", href: "/locations/miami" },
+        { name: "Broward County", href: "/locations/broward-county" },
       ]
     },
     { name: "Blog", href: "/blog" },
