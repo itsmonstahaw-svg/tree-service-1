@@ -76,6 +76,8 @@ export const Footer = () => {
               <li><a href="/locations/davie" className="hover:text-primary transition-colors">Davie</a></li>
               <li><a href="/locations/tamarac" className="hover:text-primary transition-colors">Tamarac</a></li>
               <li><a href="/locations/deerfield-beach" className="hover:text-primary transition-colors">Deerfield Beach</a></li>
+              <li><a href="/locations/miami" className="hover:text-primary transition-colors">Miami</a></li>
+              <li><a href="/locations/broward-county" className="hover:text-primary transition-colors">Broward County</a></li>
             </ul>
           </div>
 

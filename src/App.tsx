@@ -22,6 +22,8 @@ import Location7 from '@/pages/Location7'
 import Location8 from '@/pages/Location8'
 import Location9 from '@/pages/Location9'
 import Location10 from '@/pages/Location10'
+import Location11 from '@/pages/Location11'
+import Location12 from '@/pages/Location12'
 import Review from '@/pages/Review'
 import Service1 from '@/pages/Service1'
 import Service2 from '@/pages/Service2'
@@ -62,6 +64,8 @@ function App() {
       <Route path="/locations/davie" element={<Location8 />} />
       <Route path="/locations/tamarac" element={<Location9 />} />
       <Route path="/locations/deerfield-beach" element={<Location10 />} />
+      <Route path="/locations/miami" element={<Location11 />} />
+      <Route path="/locations/broward-county" element={<Location12 />} />
 
       {/* Blog */}
       <Route path="/blog" element={<Blog />} />

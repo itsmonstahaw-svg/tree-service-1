@@ -91,6 +91,14 @@ const routesMeta = {
     title: "Tree Removal in Deerfield Beach, FL | Paula's A1 Tree Removal",
     description: "Coastal tree removal & stump grinding in Deerfield Beach, FL. Serving Quiet Waters, Hillsboro, Century Village & more. Call (954) 623-0558.",
   },
+  '/locations/miami': {
+    title: "Tree Removal in Miami, FL | Paula's A1 Tree Removal & Stump Grind",
+    description: "Professional tree removal & stump grinding in Miami, FL. Serving Brickell, Wynwood, Coral Gables, Coconut Grove & Little Havana. Call (954) 623-0558.",
+  },
+  '/locations/broward-county': {
+    title: "Tree Removal in Broward County, FL | Paula's A1 Tree Removal",
+    description: "Full-service tree removal, stump grinding & storm cleanup across Broward County. Serving Fort Lauderdale, Hollywood, Pembroke Pines & more. Call (954) 623-0558.",
+  },
 
   // Blog
   '/blog': {
