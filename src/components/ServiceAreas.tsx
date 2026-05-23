@@ -29,25 +29,25 @@ export const ServiceAreas = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
-                "Lauderhill, FL",
-                "Fort Lauderdale, FL",
-                "Hollywood, FL",
-                "Miramar, FL",
-                "Pembroke Pines, FL",
-                "Plantation, FL",
-                "Sunrise, FL",
-                "Davie, FL",
-                "Tamarac, FL",
-                "Deerfield Beach, FL",
-                "Miami, FL",
-                "Broward County, FL"
+                { label: "Lauderhill, FL", href: "/locations/lauderhill" },
+                { label: "Fort Lauderdale, FL", href: "/locations/fort-lauderdale" },
+                { label: "Hollywood, FL", href: "/locations/hollywood" },
+                { label: "Miramar, FL", href: "/locations/miramar" },
+                { label: "Pembroke Pines, FL", href: "/locations/pembroke-pines" },
+                { label: "Plantation, FL", href: "/locations/plantation" },
+                { label: "Sunrise, FL", href: "/locations/sunrise" },
+                { label: "Davie, FL", href: "/locations/davie" },
+                { label: "Tamarac, FL", href: "/locations/tamarac" },
+                { label: "Deerfield Beach, FL", href: "/locations/deerfield-beach" },
+                { label: "Miami, FL", href: "/locations/miami" },
+                { label: "Broward County, FL", href: "/locations/broward-county" },
               ].map((area, index) => (
-                <div key={index} className="flex items-center gap-3 bg-black p-4 rounded-lg border border-white/10 shadow-sm text-white">
+                <a key={index} href={area.href} className="flex items-center gap-3 bg-black p-4 rounded-lg border border-white/10 shadow-sm text-white hover:border-primary/50 hover:bg-primary/5 transition-colors duration-200">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                     <MapPin className="w-5 h-5 text-primary" />
                   </div>
-                  <span className="font-bold text-sm sm:text-base leading-tight">{area}</span>
-                </div>
+                  <span className="font-bold text-sm sm:text-base leading-tight">{area.label}</span>
+                </a>
               ))}
             </div>
           </div>
