@@ -26,7 +26,7 @@ export const Hero = () => {
             Paula's A1 Tree Removal & Stump Grind
           </h1>
           <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto lg:mx-0 font-medium [text-shadow:_0_1px_5px_rgba(0,0,0,0.5)]">
-            Female-owned tree removal, stump grinding, trimming &amp; storm cleanup in Lauderhill, FL — Licensed, Insured &amp; Free Estimates.
+            Female-owned tree removal, stump grinding, trimming &amp; storm cleanup in Lauderhill, FL — Licensed, Insured &amp; Free Estimates. Serving Fort Lauderdale, Miami, Hollywood, Pembroke Pines &amp; all of Broward County.
           </p>
         </motion.div>
 
